@@ -145,9 +145,9 @@
         const g = 9.8;
         const error = ((value - g) / g * 100).toFixed(2);
         html = `<strong>자유낙하 실험 결과</strong><br>
-                입력한 높이와 시간 기준<br>
+                이론상 g : 9.8m/s²<br>
                 공식: g = 2s / t²<br>
-                g = <b>${value.toFixed(3)} m/s²</b><br>
+                입력한 높이와 시간 기준 g = <b>${value.toFixed(3)} m/s²</b><br>
                 오차율: <b>${error}%</b>`;
       } else {
         const thetaDeg = parseFloat(document.getElementById("angle").value);
